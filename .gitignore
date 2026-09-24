@@ -1,0 +1,38 @@
+# --- Virtual environments -------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# --- Jupyter -----------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Data & generated artifacts -----------------------------------------
+# PhysioNet EEGBCI download cache (MNE's default data directory)
+mne_data/
+*.edf
+*.xdf
+
+# Model / ICA weights produced by running BCI_Tutorial_HandsOn.ipynb --
+# regenerate by re-running the notebook rather than committing these.
+*.joblib
+*-ica.fif
+
+# --- OS / editor ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Office lock files (OneDrive/PowerPoint)
+~$*
